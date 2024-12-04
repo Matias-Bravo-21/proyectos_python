@@ -1,0 +1,13 @@
+Pagina web creada por mi Matias Bravo
+usare tecnologias como:
+-Html
+-css
+-javascript
+-java
+-mySQL
+2 crearemos un servidor con Python
+
+
+esta pagina web tendra la peculiaridad de que es mi primer proyecto despues de mi primer año de informatica
+y autodidacta, me apoyare de IA como claude y chat gpt para lograr una mayor comprension de codigo y como
+unir estas tecnologias

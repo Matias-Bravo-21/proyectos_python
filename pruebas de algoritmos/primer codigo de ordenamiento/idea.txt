@@ -1,0 +1,1 @@
+tomaremos una serie de numeros y esta despues las ordenaremos de forma ascendente

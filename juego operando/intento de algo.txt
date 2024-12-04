@@ -1,0 +1,43 @@
+#importamos pygame
+import pygame
+import sys
+
+from pygame.locals import *
+
+#llamamos a la funcion de pygame siempre
+pygame.init()
+#creamos la pantalla de juego
+pantalla = pygame.display.set_mode((500,400))
+#titulo de juego
+pygame.display.set_caption("mi primer game")
+
+#declaramos tuplas de colores para la paleta de colores
+blanco = (255,255,255)
+negro = (0,0,0)
+rojo = (255,0,0)
+verde = (0,255,0)
+azul =(0,0,255)
+#rellenamos la pantalla con el color que digamos
+pantalla.fill(blanco)
+
+#dibujar un rectangulo los primeros 2 parametros son de x,y y los otros 2 el ancho y alto
+pygame.draw.rect(pantalla,rojo,(100,50,100,50))
+#dibujamos una linea donde los primeros parametros dan el inicio de la linea, el siguiente dara el 
+#fin de la linea y el ultimo el grosor
+pygame.draw.line(pantalla,verde,(100,104), (199,104),10)
+
+#dibujar un circulo
+pygame.draw.circle(pantalla,negro,(122,250),20,0)
+
+pygame.draw.ellipse(pantalla, azul,(275,200,40,80),10)
+#dibujar poligonos
+puntos = [(100,300),(100,100),(150,100)]
+pygame.draw.polygon(pantalla,(0,150,255),puntos,8)
+#creamos un bucle de ventana infinita
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.quit()
+    #funcion update para refrescar la pantalla
+    pygame.display.update()
